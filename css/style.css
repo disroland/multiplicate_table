@@ -23,6 +23,7 @@ h1 {
 table {
 	text-align: left;
 	width: 100%;
+	margin-top: 20px;
 }
 td {
 font-size: 25px;
@@ -73,6 +74,7 @@ button {
 @media screen and (orientation: portrait) {
 	.wrap {
 		flex-direction: column;
+		justify-content: flex-start;
 		min-height: 90vh;
 		width: 100%;
 	}
@@ -80,5 +82,7 @@ button {
 		min-height: 45%;
 		padding: 10px;
 		width: 100%;
+		margin-bottom: 15px;
+		font-size: 36px;
 	}
 }
