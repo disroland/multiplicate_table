@@ -11,7 +11,7 @@ main {
 }
 h1, h2 {
 	text-transform: uppercase;
-	font-family: sans-serif;
+	font-family:'Lexend Giga', sans-serif;
 	font-size: 28px;
 	text-shadow: silver 1px 1px 1px;
 }
@@ -39,7 +39,8 @@ td:last-child {
 .wrap {
 	width: 90%;
 	margin: 0 auto;
-	height: 90vh;
+	height: 100%;
+	min-height: 90vh;
 	padding: 10px;
 	border: solid 1px;
 	display: flex;
@@ -49,8 +50,9 @@ td:last-child {
 }
 
 .wrap>div {
+	min-height: 90vh;
 	height: 100%;
-	width: 48%;
+	width: 49%;
 	border: 2px solid gold;
 	text-align: center;
 	background-color: rgba(255,255,255, 0.7);
@@ -66,4 +68,17 @@ button {
 	text-transform: uppercase;
 	color: white;
 	text-shadow: black 1px 1px 1px;
+}
+
+@media screen and (orientation: portrait) {
+	.wrap {
+		flex-direction: column;
+		min-height: 90vh;
+		width: 100%;
+	}
+	.wrap>div {
+		min-height: 45%;
+		padding: 10px;
+		width: 100%;
+	}
 }
